@@ -1,10 +1,16 @@
 <head>
 <title>VOT24.RU</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $('.selectgorod').on('change', function(){
-        location.href = $(this).val();
-    });
+<script language="JavaScript" type="text/javascript">
+<!--
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+-->
 </script>
 </head>
 <br/>
@@ -53,4 +59,14 @@
 		<option value="http://smo.vot24.ru/">Смоленск</option>
     </select>
 </div>
+	<form name="menu">
+<select name="sel" onChange="linklist(document.menu.sel)">
+<option value="#">Выберите раздел для перехода</option>
+<option title="Переход на главную страницу (откроется в новом окне)" 
+        value="http://www.redsimple.ru/" target="new">Главная страница</option>
+<option title="Переход к портфолио по сайтам" value="http://www.redsimple.ru/sites/">Сайты</option>
+<option title="Переход к странице с изображениями" value="http://www.redsimple.ru/foto/">Фото</option>
+<option title="Переход к архиву ссылок" value="http://www.redsimple.ru/links/">Линки</option>
+</select>
+</form>
 </center>
