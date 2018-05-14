@@ -23,10 +23,9 @@ window.location=selectedopt.value
 <br/>
 <center>
 <img src="https://raw.githubusercontent.com/hubuhub/vt24/master/vot24.png">
-<h2>Выберите город:</h2>
-<div class="selectgorod">
-   <select>
-        <option disabled>Выберите город</option>
+	<form name="menu">
+<select name="sel" onChange="linklist(document.menu.sel)">
+<option value="#">Выберите город:</option>
         <option value="http://msk.vot24.ru/">Москва</option>
 		<option value="http://spb.vot24.ru/">Санкт-Петербург</option>
 		<option value="http://vrn.vot24.ru/">Воронеж</option>
@@ -57,16 +56,6 @@ window.location=selectedopt.value
 		<option value="http://vkz.vot24.ru/">Владикавказ</option>
 		<option value="http://vng.vot24.ru/">Великий Новгород</option>
 		<option value="http://smo.vot24.ru/">Смоленск</option>
-    </select>
-</div>
-	<form name="menu">
-<select name="sel" onChange="linklist(document.menu.sel)">
-<option value="#">Выберите раздел для перехода</option>
-<option title="Переход на главную страницу (откроется в новом окне)" 
-        value="http://www.redsimple.ru/" target="new">Главная страница</option>
-<option title="Переход к портфолио по сайтам" value="http://www.redsimple.ru/sites/">Сайты</option>
-<option title="Переход к странице с изображениями" value="http://www.redsimple.ru/foto/">Фото</option>
-<option title="Переход к архиву ссылок" value="http://www.redsimple.ru/links/">Линки</option>
 </select>
 </form>
 </center>
